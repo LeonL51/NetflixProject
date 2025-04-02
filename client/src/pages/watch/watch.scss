@@ -1,0 +1,28 @@
+.watch {
+  position: relative; /* Essential for positioning the .back div absolutely within */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Ensures nothing overflows the bounds of this container */
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  position: absolute; /* Absolute positioning to float over the video */
+  top: 30px;
+  left: 10px;
+  color: white;
+  cursor: pointer;
+  z-index: 99; /* Ensures it's on top of other content */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for visibility */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
